@@ -1,18 +1,16 @@
 {
-  "name": "dovizbot",
+  "name": "spotifydlbot",
   "env": {
     "bot_token": {
       "description": "You bot token",
       "value": ""
 }
   },
-  "buildpacks": [{
+  "buildpacks": [
+    {
+      "url": "https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku/python.tgz"
+    },
+    {
       "url": "heroku/python"
-    }],
-  "formation": {
-      "web": {
-          "quantity": 1,
-          "size": "free"
-      }
-  }
-}
+    }
+  ]
