@@ -1,15 +1,12 @@
 {
-  "name": "spotifydlbot",
+  "name": "Dovizbot",
   "env": {
     "BOT_TOKEN": {
-      "description": "You bot token",
+      "description": "bot tokenin",
       "value": ""
 }
   },
   "buildpacks": [
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-    },
     {
       "url": "heroku/python"
     }
