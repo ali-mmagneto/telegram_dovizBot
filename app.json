@@ -1,7 +1,7 @@
 {
   "name": "Dovizbot",
   "env": {
-    "BOT_TOKEN": {
+    "bot_token": {
       "description": "bot tokenin",
       "value": ""
 }
