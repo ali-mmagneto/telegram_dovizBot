@@ -1,35 +1,16 @@
 {
-  "name": "Small Sharp Tool",
-  "description": "This app does one little thing, and does it well.",
-  "keywords": [
-    "productivity",
-    "HTML5",
-    "scalpel"
-  ],
-  "website": "https://small-sharp-tool.com/",
-  "repository": "https://github.com/jane-doe/small-sharp-tool",
-  "logo": "https://small-sharp-tool.com/logo.svg",
-  "success_url": "/welcome",
-  "scripts": {
-    "postdeploy": "bundle exec rake bootstrap"
-  },
+  "name": "spotifydlbot",
   "env": {
-    "bot_token": {
-      "description": "A secret key for verifying the integrity of signed cookies.",
-      "generator": "secret"
-    },
-   
-  ],
+    "BOT_TOKEN": {
+      "description": "You bot token",
+      "value": ""
+}
+  },
   "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
     {
       "url": "heroku/python"
     }
-  ],
-  "environments": {
-    "test": {
-      "scripts": {
-        "test": "bundle exec rake test"
-      }
-    }
-  }
-}
+  ]
