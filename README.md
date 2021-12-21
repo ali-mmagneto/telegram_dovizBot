@@ -1,5 +1,7 @@
 # Telegram Döviz Botu
 
+https://heroku.com/deploy?template=https://github.com/ali-mmagneto/telegram_dovizBot
+
 Güncel Kripto Para bilgilerini, doviz kur bilgilerini veren ve bu kur bilgilerini kullanarak çeviri işlemlerini yapan Telegram botu.
 ### Bot'a telegram arama çubuğuna @dovizKurBot yazarak ulaşabilirsiniz
 
