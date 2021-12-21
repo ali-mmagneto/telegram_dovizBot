@@ -1,0 +1,22 @@
+{
+    "name": "Telegram Doviz Botu",
+    "description": "Telegram icin bir doviz botu. Pyrogram ile yapildi.",
+    "repository": "https://github.com/ali-mmagneto/telegram_dovizBot",
+    "keywords": [
+        "movie",
+        "information",
+        "finder",
+        "pyrogram",
+        "telegram bot"
+    ],
+    "env": {
+        "BOT_TOKEN": {
+            "description": "@Botfather"
+        },
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
