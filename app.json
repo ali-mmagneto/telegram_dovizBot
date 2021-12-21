@@ -1,16 +1,7 @@
-{
-  "name": "spotifydlbot",
+{"name": "dovizbot",
   "env": {
     "bot_token": {
       "description": "You bot token",
-      "value": ""
-}
-  },
-  "buildpacks": [
-    {
-      "url": "https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku/python.tgz"
-    },
-    {
-      "url": "heroku/python"
-    }
-  ]
+      "value": ""}},
+  "buildpacks": [{"url": "https://buildpack-registry.s3.amazonaws.com/buildpacks/heroku/python.tgz"},
+    {"url": "heroku/python"}]
