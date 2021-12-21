@@ -1,22 +1,35 @@
 {
-    "name": "Telegram Doviz Botu",
-    "description": "Telegram icin bir doviz botu. Pyrogram ile yapildi.",
-    "repository": "https://github.com/ali-mmagneto/telegram_dovizBot",
-    "keywords": [
-        "movie",
-        "information",
-        "finder",
-        "pyrogram",
-        "telegram bot"
-    ],
-    "env": {
-        "BOT_TOKEN": {
-            "description": "@Botfather"
-        },
+  "name": "Small Sharp Tool",
+  "description": "This app does one little thing, and does it well.",
+  "keywords": [
+    "productivity",
+    "HTML5",
+    "scalpel"
+  ],
+  "website": "https://small-sharp-tool.com/",
+  "repository": "https://github.com/jane-doe/small-sharp-tool",
+  "logo": "https://small-sharp-tool.com/logo.svg",
+  "success_url": "/welcome",
+  "scripts": {
+    "postdeploy": "bundle exec rake bootstrap"
+  },
+  "env": {
+    "bot_token": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
     },
-    "buildpacks": [
-        {
-            "url": "heroku/python"
-        }
-    ]
+   
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "bundle exec rake test"
+      }
+    }
+  }
 }
